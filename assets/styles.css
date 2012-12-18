@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("tradegothic/413d9688-00d4-47c4-bb55-656a0cd396e9.eot?#iefix");
+  src: url("tradegothic/413d9688-00d4-47c4-bb55-656a0cd396e9.eot?#iefix") format("eot"), url("tradegothic/c4aef0d4-bfcf-4790-acf5-909881f411e8.woff") format("woff"), url("tradegothic/e741f29c-bc18-4343-bff3-db2465a0be3e.ttf") format("truetype"), url("tradegothic/853e2a9b-4057-42a5-ad7e-0762cda0b13c.svg#853e2a9b-4057-42a5-ad7e-0762cda0b13c") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("tradegothic/65196ee3-28dd-4eca-b4a6-4e2d22efc769.eot?#iefix");
+  src: url("tradegothic/65196ee3-28dd-4eca-b4a6-4e2d22efc769.eot?#iefix") format("eot"), url("tradegothic/0909f879-d4b6-4d64-8bfd-b9990c7bd2ff.woff") format("woff"), url("tradegothic/974cb5f7-6d77-4490-bdb9-7615021b81f6.ttf") format("truetype"), url("tradegothic/5263ddfe-a3e4-4276-b299-753b86ed8c3e.svg#5263ddfe-a3e4-4276-b299-753b86ed8c3e") format("svg");
+  font-style: normal;
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Trade Gothic Bold";
+  src: url("tradegothic/2e9af08f-0faf-45e3-9767-78a700434af3.eot?#iefix");
+  src: url("tradegothic/2e9af08f-0faf-45e3-9767-78a700434af3.eot?#iefix") format("eot"), url("tradegothic/f51d24dd-8256-43c6-ba1a-6aeae9d3f262.woff") format("woff"), url("tradegothic/955ee494-66b2-4eb2-8f19-bc3a088df16d.ttf") format("truetype"), url("tradegothic/d5153ad4-7c93-4757-9147-640e69ec4801.svg#d5153ad4-7c93-4757-9147-640e69ec4801") format("svg");
+  font-style: normal;
+  font-weight: bold; }
+
+body {
+  background: url("blueprint.gif") repeat center top;
+  color: #dfebf4;
+  font-family: "Trade Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px; }
+
+#container {
+  margin: 120px auto;
+  padding: 0 20px;
+  width: 525px; }
+
+h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 52px;
+  margin-bottom: 10px; }
+  h1 > span {
+    font-family: "Trade Gothic Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+
+h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px; }
+  h2 span {
+    color: #dfebf4;
+    font-weight: normal;
+    margin-left: 10px; }
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none; }
+
+p {
+  margin: 0 0 20px; }
+
+small {
+  font-size: 13px; }
+
+header {
+  height: 182px;
+  -webkit-animation: slideIn 1s ease;
+  -moz-animation: slideIn 1s ease; }
+  header a:after {
+    content: " →"; }
+
+@-webkit-keyframes slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(130px); } }
+
+@-moz-keyframes slideIn {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(130px); } }
+
+.project {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #dfebf4;
+  display: block;
+  font-weight: normal;
+  height: 110px;
+  margin: 40px 0;
+  padding: 35px 40px;
+  -webkit-transition: background 100ms linear;
+  -moz-transition: background 100ms linear;
+  -webkit-animation: fadeIn 1s ease;
+  -moz-animation: fadeIn 1s ease; }
+  .project:hover {
+    background: rgba(255, 255, 255, 0.15); }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px); } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(30px); } }
