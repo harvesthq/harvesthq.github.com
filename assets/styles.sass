@@ -1,9 +1,20 @@
 @import "reset"
 
+$ff-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif
+$ff-trade-bold: "Trade Gothic Bold", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+@import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=00e393ce-878b-4c78-9179-b02ce0c10500")
+@font-face
+  font-family: "Trade Gothic Bold"
+  src: url("tradegothic/2e9af08f-0faf-45e3-9767-78a700434af3.eot?#iefix")
+  src: url("tradegothic/2e9af08f-0faf-45e3-9767-78a700434af3.eot?#iefix") format("eot"), url("tradegothic/f51d24dd-8256-43c6-ba1a-6aeae9d3f262.woff") format("woff"), url("tradegothic/955ee494-66b2-4eb2-8f19-bc3a088df16d.ttf") format("truetype"), url("tradegothic/d5153ad4-7c93-4757-9147-640e69ec4801.svg#d5153ad4-7c93-4757-9147-640e69ec4801") format("svg")
+  font-style: normal
+  font-weight: bold
+
 body
   background: url("blueprint.gif") repeat center top
   color: #dfebf4
-  font-family: "Trade Gothic W01 Roman", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: $ff-helvetica
   font-size: 14px
   line-height: 20px
 
@@ -14,20 +25,18 @@ body
 
 h1
   color: #fff
-  font-family: "Trade Gothic W01 Roman", "Helvetica Neue", Helvetica, Arial, sans-serif
   font-size: 36px
   font-weight: normal
   line-height: 52px
   margin-bottom: 12px
   > a
-    font-family: "Trade Gothic W01 Bold", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: $ff-trade-bold
     font-weight: bold
     letter-spacing: 3px
     text-transform: uppercase
 
 h2
   color: #fff
-  font-family: "Trade Gothic W01 Bold 2", "Helvetica Neue", Helvetica, Arial, sans-serif
   font-size: 24px
   font-weight: bold
   line-height: 28px
