@@ -1,45 +1,10 @@
 @import "reset"
 
-$ff-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif
-$ff-trade: "Trade Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif
-$ff-trade-bold: "Trade Gothic Bold", "Helvetica Neue", Helvetica, Arial, sans-serif
-
-// @font-face
-//   font-family: "Trade Gothic"
-//   src: url("tradegothic/1d699af3-0e50-4c4b-a343-42d071e85714.eot?#iefix")
-//   src: url("tradegothic/1d699af3-0e50-4c4b-a343-42d071e85714.eot?#iefix") format("eot"), url("tradegothic/537b145a-6a7d-4787-81d9-7228d3a42458.woff") format("woff"), url("tradegothic/8e50278c-45cd-4808-b774-24767d958f17.ttf") format("truetype"), url("tradegothic/d918b947-5fcb-42e2-8286-a98a801876de.svg#d918b947-5fcb-42e2-8286-a98a801876de") format("svg")
-//   font-style: normal
-//   font-weight: 200
-// @font-face
-//   font-family: "Trade Gothic"
-//   src: url("tradegothic/59fa12c0-25c9-4c0c-bd1e-32204311d86d.eot?#iefix")
-//   src: url("tradegothic/59fa12c0-25c9-4c0c-bd1e-32204311d86d.eot?#iefix") format("eot"), url("tradegothic/1c164451-034c-41f5-9542-390709016510.woff") format("woff"), url("tradegothic/7062b4ff-265a-4366-b34f-443ec5cc2dad.ttf") format("truetype"), url("tradegothic/09f52831-e1cf-48be-9c1e-2d1577e420b7.svg#09f52831-e1cf-48be-9c1e-2d1577e420b7") format("svg")
-//   font-style: italic
-//   font-weight: normal
-@font-face
-  font-family: "Trade Gothic"
-  src: url("tradegothic/413d9688-00d4-47c4-bb55-656a0cd396e9.eot?#iefix")
-  src: url("tradegothic/413d9688-00d4-47c4-bb55-656a0cd396e9.eot?#iefix") format("eot"), url("tradegothic/c4aef0d4-bfcf-4790-acf5-909881f411e8.woff") format("woff"), url("tradegothic/e741f29c-bc18-4343-bff3-db2465a0be3e.ttf") format("truetype"), url("tradegothic/853e2a9b-4057-42a5-ad7e-0762cda0b13c.svg#853e2a9b-4057-42a5-ad7e-0762cda0b13c") format("svg")
-  font-style: normal
-  font-weight: normal
-@font-face
-  font-family: "Trade Gothic"
-  src: url("tradegothic/65196ee3-28dd-4eca-b4a6-4e2d22efc769.eot?#iefix")
-  src: url("tradegothic/65196ee3-28dd-4eca-b4a6-4e2d22efc769.eot?#iefix") format("eot"), url("tradegothic/0909f879-d4b6-4d64-8bfd-b9990c7bd2ff.woff") format("woff"), url("tradegothic/974cb5f7-6d77-4490-bdb9-7615021b81f6.ttf") format("truetype"), url("tradegothic/5263ddfe-a3e4-4276-b299-753b86ed8c3e.svg#5263ddfe-a3e4-4276-b299-753b86ed8c3e") format("svg")
-  font-style: normal
-  font-weight: bold
-@font-face
-  font-family: "Trade Gothic Bold"
-  src: url("tradegothic/2e9af08f-0faf-45e3-9767-78a700434af3.eot?#iefix")
-  src: url("tradegothic/2e9af08f-0faf-45e3-9767-78a700434af3.eot?#iefix") format("eot"), url("tradegothic/f51d24dd-8256-43c6-ba1a-6aeae9d3f262.woff") format("woff"), url("tradegothic/955ee494-66b2-4eb2-8f19-bc3a088df16d.ttf") format("truetype"), url("tradegothic/d5153ad4-7c93-4757-9147-640e69ec4801.svg#d5153ad4-7c93-4757-9147-640e69ec4801") format("svg")
-  font-style: normal
-  font-weight: bold
-
 body
   background: url("blueprint.gif") repeat center top
   color: #dfebf4
-  font-family: $ff-trade
-  font-size: 15px
+  font-family: "Trade Gothic W01 Roman", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 14px
   line-height: 20px
 
 #container
@@ -49,25 +14,23 @@ body
 
 h1
   color: #fff
+  font-family: "Trade Gothic W01 Roman", "Helvetica Neue", Helvetica, Arial, sans-serif
   font-size: 36px
   font-weight: normal
   line-height: 52px
-  margin-bottom: 10px
-  > span
-    font-family: $ff-trade-bold
+  margin-bottom: 12px
+  > a
+    font-family: "Trade Gothic W01 Bold", "Helvetica Neue", Helvetica, Arial, sans-serif
     font-weight: bold
     letter-spacing: 3px
     text-transform: uppercase
 
 h2
   color: #fff
+  font-family: "Trade Gothic W01 Bold 2", "Helvetica Neue", Helvetica, Arial, sans-serif
   font-size: 24px
   font-weight: bold
   line-height: 28px
-  span
-    color: #dfebf4
-    font-weight: normal
-    margin-left: 10px
 
 a
   color: #fff
@@ -83,9 +46,12 @@ small
 header
   height: 182px
   -webkit-animation: slideIn 1s ease
-  -moz-animation: slideIn 1s ease
-  a:after
-    content: " →"
+  -moz-animation:    slideIn 1s ease
+  > p
+    > a:after
+      content: " →"
+    > a:hover:after
+      padding-left: 3px
 
 @-webkit-keyframes slideIn
   0%
@@ -106,9 +72,9 @@ header
   margin: 40px 0
   padding: 35px 40px
   -webkit-transition: background 100ms linear
-  -moz-transition: background 100ms linear
+  -moz-transition:    background 100ms linear
   -webkit-animation: fadeIn 1s ease
-  -moz-animation: fadeIn 1s ease
+  -moz-animation:    fadeIn 1s ease
   &:hover
     background: rgba(255,255,255,0.15)
 
