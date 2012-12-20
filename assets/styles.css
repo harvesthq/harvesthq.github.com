@@ -49,7 +49,8 @@ body {
   color: #dfebf4;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 20px; }
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased; }
 
 #container {
   margin: 120px auto;
