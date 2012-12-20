@@ -34,7 +34,7 @@ h1
     font-family: $ff-trade-bold
     font-size: 38px
     font-weight: bold
-    letter-spacing: 3px
+    letter-spacing: 2px
     text-transform: uppercase
 
 h2
@@ -45,7 +45,6 @@ h2
 
 a
   color: #fff
-  font-weight: bold
   text-decoration: none
 
 p
@@ -58,10 +57,11 @@ header
   height: 182px
   -webkit-animation: slideIn 1s ease
   -moz-animation:    slideIn 1s ease
-  > p
-    > a:after
+  p > a
+    font-weight: bold
+    &:after
       content: " →"
-    > a:hover:after
+    &:hover:after
       padding-left: 3px
 
 @-webkit-keyframes slideIn
@@ -75,10 +75,10 @@ header
 
 .project
   background: rgba(255,255,255,0.1)
+  border: 1px solid #fff  // back up for IE
   border: 1px solid rgba(255,255,255,0.5)
   color: #dfebf4
   display: block
-  font-weight: normal
   height: 110px
   margin: 40px 0
   padding: 35px 40px

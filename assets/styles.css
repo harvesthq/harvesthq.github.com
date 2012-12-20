@@ -67,7 +67,7 @@ h1 {
     font-family: "Trade Gothic Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 38px;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase; }
 
 h2 {
@@ -78,7 +78,6 @@ h2 {
 
 a {
   color: white;
-  font-weight: bold;
   text-decoration: none; }
 
 p {
@@ -91,10 +90,12 @@ header {
   height: 182px;
   -webkit-animation: slideIn 1s ease;
   -moz-animation: slideIn 1s ease; }
-  header > p > a:after {
-    content: " →"; }
-  header > p > a:hover:after {
-    padding-left: 3px; }
+  header p > a {
+    font-weight: bold; }
+    header p > a:after {
+      content: " →"; }
+    header p > a:hover:after {
+      padding-left: 3px; }
 
 @-webkit-keyframes slideIn {
   0% {
@@ -108,10 +109,10 @@ header {
 
 .project {
   background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: #dfebf4;
   display: block;
-  font-weight: normal;
   height: 110px;
   margin: 40px 0;
   padding: 35px 40px;
